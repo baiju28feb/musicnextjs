@@ -60,7 +60,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       
       - name: Build with Next.js (bypass ESLint)
-        run: NEXT_PUBLIC_ESLINT_IGNORE=true ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: NEXT_PUBLIC_ESLINT_IGNORE=true NEXT_DISABLE_ESLINT=true npx --no-install next build
 
       - name: Export static site
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
