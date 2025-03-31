@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // This replaces the next export command
+  output: "export", // Enables static export
+  basePath: "/repository-name", // Change this to your repo name
+  assetPrefix: "/repository-name/", // Ensures assets load correctly
   images: {
-    domains: ["images.unsplash.com"], // Allow Unsplash images
-    unoptimized: true, // Required for static export with images
+    domains: ["images.unsplash.com"],
+    unoptimized: true, // Required for GitHub Pages
   },
   eslint: {
     ignoreDuringBuilds: true,
