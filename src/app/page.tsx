@@ -4,6 +4,7 @@ import FeaturedCourses from "@/components/FeaturedCourses"
 import AboutUs from "@/components/AboutUs"
 import {Testimonials} from "@/components/Testimonials"
 import Instructors from "@/components/Instructors";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <AboutUs/>
     <Testimonials/>
     <Instructors/>
+    <Footer/>
   </main>
   );
 }
