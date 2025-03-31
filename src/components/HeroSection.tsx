@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Spotlight } from "./ui/Spotlight"
 import { Button } from "./ui/moving-border"
 import { ImagesSlider } from "./ui/image-slider";
+import Image from 'next/image';
 
 function HeroSection() {
     const images = [
@@ -24,7 +25,14 @@ function HeroSection() {
                         className="-top-40 left-0 md:-top-20 md:left-60"
                         fill="white"
                     />
-                    
+                     <div className=" absolute top-0 left-0 size-60">
+                        <Image
+                        src="/data/images/dwi_logo.png"
+                        alt="Dwi Academy Of Music Logo"
+                        width={250} 
+                        height={100} 
+                        />
+                     </div>              
                     <div className="p-4 w-full text-center">
                         <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
                         Dwi Academy Of Music
