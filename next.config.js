@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Enables static export
-  basePath: "/musicnextjs", // Change this to your repo name
-  assetPrefix: "/courses", // Ensures assets load correctly
   images: {
-    domains: ["images.unsplash.com"],
-    unoptimized: true, // Required for GitHub Pages
+    domains: ["images.unsplash.com"], // Allow Unsplash images
   },
   eslint: {
     ignoreDuringBuilds: true,
